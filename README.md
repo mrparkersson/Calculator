@@ -1,9 +1,8 @@
-# Calculator project React
+# React Calculator
 
-> Add comments and likes to display page
-> Add tests to count for comments, likes and displaying items
-> Create HTML, CSS file
-> Create JavaScript file which manipulates the DOM; adding clicks to elements and adding fucntions to remove and item from the list
+> Use react to write JSX
+> Created Component for Calculator
+> Called Calculator in App.js to render it dynamically
 
 ## Built With
 
