@@ -5,7 +5,7 @@ import Operator from './Operator';
 const Calculator = () => {
   const [calc, setCalc] = useState('');
   const [result, setResult] = useState('');
-  const ops = ['/', '*', '.', '+', '%'];
+  const ops = ['/', '*', '.', '+', '%', '-'];
 
   const clearAllData = () => {
     setCalc('');

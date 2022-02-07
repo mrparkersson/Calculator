@@ -48,7 +48,6 @@ const Operator = ({
           <button>+/-</button>
           <button onClick={() => updateCalc('%')}>%</button>
           <button id='orange' onClick={() => updateCalc('/')}>
-            {' '}
             ÷
           </button>
         </div>
@@ -72,7 +71,7 @@ const Operator = ({
             <button onClick={() => updateCalc('.')} id='zero'>
               .
             </button>
-            <button onClick={calculate} id='zero'>
+            <button id='zero' onClick={calculate}>
               =
             </button>
           </div>
