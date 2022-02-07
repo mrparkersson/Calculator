@@ -1,9 +1,8 @@
-# Javascript Capstone project
+# React Calculator
 
-> Add comments and likes to display page
-> Add tests to count for comments, likes and displaying items
-> Create HTML, CSS file
-> Create JavaScript file which manipulates the DOM; adding clicks to elements and adding fucntions to remove and item from the list
+> Use react to write JSX
+> Created Component for Calculator
+> Called Calculator in App.js to render it dynamically
 
 ## Built With
 
@@ -13,7 +12,7 @@
 
 ## Online live link
 
-[Visit project online](https://adornchoga.github.io/Javascript_Capstone/)
+[Visit project online](https://github.com/mrparkersson/Calculator)
 
 ## Getting Started
 
@@ -23,7 +22,7 @@ To get a local copy up and running follow these simple example steps.
 
 To get a local copy up and running follow these simple example steps.
 
-- Clone the repository to your computer using git clone [Git Clone Url](https://github.com/AdornChoga/Javascript_Capstone)
+- Clone the repository to your computer using git clone [Git Clone Url](https://github.com/mrparkersson/Calculator)
 - Cd into the folder
 - Run `npm install` to install the project's dependencies;
 - Run `npm start` to open the website using webpack live server or
@@ -32,11 +31,11 @@ To get a local copy up and running follow these simple example steps.
 
 ## Visit And Open Files
 
-[Visit Repo](https://github.com/AdornChoga/Javascript_Capstone)
+[Visit Repo](https://github.com/mrparkersson/Calculator)
 
 ## Download Repo
 
-[Download Repo](https://github.com/AdornChoga/Javascript_Capstone)
+[Download Repo](https://github.com/mrparkersson/Calculator)
 
 ## Authors
 
@@ -48,7 +47,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/AdornChoga/Javascript_Capstone).
+Feel free to check the [issues page](https://github.com/mrparkersson/Calculator).
 
 ## Show your support
 

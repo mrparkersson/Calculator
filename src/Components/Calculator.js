@@ -1,9 +1,10 @@
+import React from 'react';
 import { useState } from 'react';
 
 const Calculator = () => {
   const [calc, setCalc] = useState('');
   const [result, setResult] = useState('');
-  const ops = ['/', '*', '.', '+'];
+  const ops = ['/', '*', '.', '+', '%'];
 
   const updateCalc = (value) => {
     if (
@@ -34,21 +35,26 @@ const Calculator = () => {
 
   const calculate = () => {
     setCalc(eval(calc).toString());
+    setResult('');
   };
 
   const clearAllData = () => {
     setCalc('');
+    setResult('');
   };
 
   return (
     <div>
       <div className='calculator'>
-        <div className='display'>{calc || 0}</div>
+        <div className='display'>
+          {result ? <span>({result})</span> : ''}
+          {calc || 0}
+        </div>
         <div className='operators'>
           <button onClick={clearAllData}>AC</button>
           <button>+/-</button>
-          <button>%</button>
-          <button id='orange' onClick={() => updateCalc('÷')}>
+          <button onClick={() => updateCalc('%')}>%</button>
+          <button id='orange' onClick={() => updateCalc('/')}>
             {' '}
             ÷
           </button>

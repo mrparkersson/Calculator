@@ -1,4 +1,5 @@
-import Calculator from './Calculator';
+import React from 'react';
+import Calculator from './Components/Calculator';
 
 function App() {
   return (
