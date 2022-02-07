@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 
 const Operator = ({
   ops,
@@ -57,7 +56,7 @@ const Operator = ({
           <div className='container'>
             <div className='digits-container'>{createDigits()}</div>
             <div className='operator-buttons'>
-              <button id='orange' onClick={() => updateCalc('x')}>
+              <button id='orange' onClick={() => updateCalc('*')}>
                 x
               </button>
               <button id='orange' onClick={() => updateCalc('-')}>
