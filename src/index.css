@@ -1,13 +1,127 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary: rgba(128, 128, 128, 0.726);
+  --secondary: rgba(255, 115, 0, 0.781);
+  --zero: rgba(0, 0, 0, 0.486);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.display {
+  padding: 16px;
+  text-align: right;
+  background-color: var(--zero);
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.display span {
+  font-size: 14px;
+  color: white;
+  margin-right: 20px;
+}
+
+button {
+  border: 1px solid rgba(128, 128, 128, 0.233);
+  outline: none;
+  font-size: 20px;
+  padding: 16px;
+  color: black;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#orange {
+  background-color: rgba(255, 115, 0, 0.781);
+}
+
+.operators {
+  display: flex;
+}
+
+.operators button {
+  flex: 1 1 0%;
+}
+
+.operator-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  align-items: center;
+}
+
+.operator-buttons button {
+  width: 100%;
+  background-color: var(--secondary);
+}
+
+.operator-buttons button:hover {
+  opacity: 0.9;
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digits button {
+  flex: 1 1 33.333%;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.digits-container {
+  display: flex;
+  justify-content: stretch;
+  flex: 1 1 25%;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.last-buttons {
+  display: flex;
+  width: 100%;
+}
+
+.last-buttons button:last-child {
+  background-color: var(--secondary);
+}
+
+.last-buttons:hover {
+  opacity: 0.9;
+}
+
+#zero {
+  flex: 1;
+}
+
+.equalto {
+  background-color: var(--secondary);
 }
