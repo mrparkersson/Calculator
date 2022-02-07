@@ -4,7 +4,7 @@ import { useState } from 'react';
 const Calculator = () => {
   const [calc, setCalc] = useState('');
   const [result, setResult] = useState('');
-  const ops = ['/', '*', '.', '+'];
+  const ops = ['/', '*', '.', '+', '%'];
 
   const updateCalc = (value) => {
     if (
@@ -35,6 +35,7 @@ const Calculator = () => {
 
   const calculate = () => {
     setCalc(eval(calc).toString());
+    setResult('');
   };
 
   const clearAllData = () => {
@@ -52,8 +53,8 @@ const Calculator = () => {
         <div className='operators'>
           <button onClick={clearAllData}>AC</button>
           <button>+/-</button>
-          <button>%</button>
-          <button id='orange' onClick={() => updateCalc('÷')}>
+          <button onClick={() => updateCalc('%')}>%</button>
+          <button id='orange' onClick={() => updateCalc('/')}>
             {' '}
             ÷
           </button>

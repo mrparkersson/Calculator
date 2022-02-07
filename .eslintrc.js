@@ -1,4 +1,4 @@
-module.exports = {
+eslint = {
   env: {
     browser: true,
     es2021: true,
@@ -14,3 +14,5 @@ module.exports = {
   plugins: ['react'],
   rules: {},
 };
+
+export default eslint;
