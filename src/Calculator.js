@@ -39,12 +39,16 @@ const Calculator = () => {
 
   const clearAllData = () => {
     setCalc('');
+    setResult('');
   };
 
   return (
     <div>
       <div className='calculator'>
-        <div className='display'>{calc || 0}</div>
+        <div className='display'>
+          {result ? <span>({result})</span> : ''}
+          {calc || 0}
+        </div>
         <div className='operators'>
           <button onClick={clearAllData}>AC</button>
           <button>+/-</button>

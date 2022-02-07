@@ -1,5 +1,5 @@
 :root {
-  --primary: rgba(128, 128, 128, 0.726);
+  --primary: rgba(128, 128, 128, 0.516);
   --secondary: rgba(255, 115, 0, 0.781);
   --zero: rgba(0, 0, 0, 0.486);
 }
@@ -23,7 +23,6 @@
   width: 100%;
   max-width: 400px;
   overflow: hidden;
-
   color: white;
 }
 
