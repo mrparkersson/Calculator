@@ -1,0 +1,26 @@
+.navbar-container {
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  color: white;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.navbar-container ul {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  width: 50%;
+  list-style: none;
+}
+
+.navbar-container ul li {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-container ul li:hover {
+  border-bottom: 2px solid white;
+}
