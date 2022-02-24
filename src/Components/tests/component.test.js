@@ -5,7 +5,6 @@ import '@testing-library/jest-dom';
 import Navbar from '../Navbar';
 import Quote from '../Quote';
 import Home from '../Home';
-import Operator from '../Operator';
 
 describe('Navbar Test', () => {
   test('render nav bar', () => {
