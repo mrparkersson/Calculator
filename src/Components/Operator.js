@@ -12,7 +12,7 @@ const Operator = ({
   const updateCalc = (value) => {
     if (
       (ops.includes(value) && calc === '') ||
-      (ops.includes(value) && ops.includes(calc.slice(-1)))
+      (ops.includes(value) && ops.includes(calc))
     ) {
       return;
     }
@@ -39,7 +39,7 @@ const Operator = ({
   return (
     <div>
       <div className='calculator'>
-        <div className='display'>
+        <div className='display' role='display'>
           {result ? <span>({result})</span> : ''}
           {calc || 0}
         </div>
@@ -58,7 +58,7 @@ const Operator = ({
               <button id='orange' onClick={() => updateCalc('*')}>
                 x
               </button>
-              <button id='orange' onClick={() => updateCalc('-')}>
+              <button id='orange' onClick={() => updateCalc('-')} role='-'>
                 -
               </button>
               <button id='orange' onClick={() => updateCalc('+')}>
